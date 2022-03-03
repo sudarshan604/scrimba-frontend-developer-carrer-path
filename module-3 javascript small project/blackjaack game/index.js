@@ -45,8 +45,11 @@ function startGame()
     sum=firstCard+secondCard
 
     renderGame();
-
+  
 }
+     
+    
+
 function renderGame()
 {
     cardEl.textContent="cards: " ;
@@ -79,8 +82,8 @@ messageEl.textContent=message;
 function newGame(){
 
    if(isAlive===true&& hasBlackJack!==true)
-   {
-    let Card=getRandomCard();
+       {
+     let Card=getRandomCard();
   
     sum+=Card;
    cards.push(Card);
