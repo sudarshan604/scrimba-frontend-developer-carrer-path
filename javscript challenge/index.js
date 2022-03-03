@@ -109,7 +109,7 @@ for(let i=0;i<imgC.length;i++){
 image+=` <img src="${imgC[i]}"> ` 
 }
 imageF.innerHTML=image
-
+ 
 
 
 
