@@ -1,0 +1,60 @@
+body{
+    margin:0;
+}
+
+
+h1,h2,p{
+    margin-top: 0;
+}
+h1{
+    font-size: 24px;
+}
+p{
+    font-size: 18px;
+}
+a{
+    color:#ffe600
+}
+header,section{
+    padding:50px;
+}
+header{
+  
+   background:#ffe600 ;
+  color:#000;
+}
+.section-one{
+    background: black;
+    color:white;
+}
+
+.link{
+    color: #000;
+}
+
+/* styling button */
+
+.btn{
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 25px;
+   text-decoration: none;
+}
+.btn-accent{
+    color: #000;
+    background-color: #ffe600
+}
+
+.btn-dark{
+      color:#ffe600;
+      background-color: #000;
+}
+
+
+
+
+
+
+
+
+
