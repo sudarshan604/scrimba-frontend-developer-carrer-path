@@ -1,0 +1,36 @@
+body{
+ background-color: red;
+}
+
+input{
+padding: 12px;
+ margin:4px;
+}
+label{
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.results,.header{
+    width:500px;
+    margin:0 auto;
+}
+
+.header{
+    background-color: orange;
+   padding: 34px;
+}
+.results{
+    background-color: blue;
+  padding: 33px;
+  
+}
+li{
+ list-style-type: none;
+ }
+ .name{
+     background-color: white;
+     margin: 3px;
+     margin-bottom: 25px;
+     padding: 15px;
+    }
