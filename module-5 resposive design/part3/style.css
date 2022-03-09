@@ -20,6 +20,9 @@ img{
 }
 
 
+
+
+
 .container{
     max-width: 980px; 
    margin: 0 auto;
@@ -48,5 +51,15 @@ img{
 }
 
 
+@media(max-width:600px){
+    .columns{
+        flex-direction: column;
+    }
 
+    .col-1,.col-2,.col-3{
+        width: 100%;
+    }
+    
+    }
+    
 
