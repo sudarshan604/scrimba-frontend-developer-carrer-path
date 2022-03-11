@@ -38,7 +38,7 @@ h3{
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: 400;
    color:#1792d2;
-
+ margin-top: 0;
 }
 
 h1{
@@ -55,7 +55,7 @@ p,h1{
 }
 
 .articel-read-more,
-.article-info{
+.artice-info{
    font-size:.875rem;
 }
 .articel-read-more{
@@ -69,8 +69,14 @@ p,h1{
    color:#143774
 }
 
-
-
+.artice-info{
+   margin:2em 0 ;
+}
+.article-feature{
+  padding-bottom: 1.5em;
+   border-bottom: #707070 2px solid;
+ margin-bottom: 2em;
+}
 
 
 nav a:hover,
@@ -89,7 +95,6 @@ nav .current-page:hover,.current-page:focus{
 .container{
    width: 90%; 
     max-width: 900px;
-   border: 2px solid red;
     margin: 0 auto;
    }
  
@@ -113,7 +118,7 @@ ul{
  justify-content: center;
  }
 
- nav li{
+ nav li{ 
     margin: .5em;
  }
 
@@ -138,11 +143,19 @@ ul{
  }
 
 }
+.article-recent
+{
+   display: flex;
+  flex-direction: column;
+ margin-bottom: 2em;
+}
 
-
-
-
-
+.article-recent-main{
+ order: 2;
+}
+.articel-recent-secondary{
+   order:1;
+}
 
 
 
