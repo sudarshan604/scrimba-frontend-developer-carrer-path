@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-size: 1rem;
+    color:#404040;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+/* h1+p first sibling of h1 if p is there */
+/* h1  */
+h1+p{
+    color: #f18110;
+  font-weight: 900;
+  font-size: 1.3125rem;
+}
+
+
+h2{
+   font-size: 1.3125rem;   
+}
+strong{ font-weight: 900;}
