@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-size: 1rem;
@@ -10,7 +14,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
-  margin: 2em 0;
+  margin: 0;
 }
 /* h1+p first sibling of h1 if p is there */
 /* h1  */
@@ -53,14 +57,30 @@ strong {
 .intro-main {
   background-image: url("../images/dark-ribs.jpg");
   background-size: cover;
-  background-color: #404040;
+  background-color: #404040; /*during loading time if image not display then color */
   background-position: center;
   padding: 0 0.25em 1em;
-  display: flex;
-  flex-direction: column;
 }
 .main-content {
   padding: 2em 1em;
+}
+
+/* .intro-main > *,     > mean all direct child
+.main-content > * {
+  max-width: 400px; /*element is not stretch more then 400px
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.container-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
 }
 
 /* media */
@@ -82,5 +102,14 @@ strong {
   .intro-main,
   .main-content {
     width: 50%;
+    min-height: 100vh;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-intro {
+    height: 100%; /*100% of parent vh intro-main if we use 100vh then it parent also have 100 vh so it gate some scroll due to padding*/
   }
 }
