@@ -34,7 +34,7 @@ h2 + p {
   color: #f18110;
   font-weight: 900;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
 }
 
 strong {
@@ -47,6 +47,11 @@ strong {
   color: orange;
   text-transform: uppercase;
   order: -1;
+  border-top: 5px solid #f18110;
+  margin: 0;
+  padding-top: 2px;
+  letter-spacing: 2px;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 .fine-print {
   font-size: 0.625rem;
@@ -57,7 +62,8 @@ strong {
 .intro-main {
   background-image: url("../images/dark-ribs.jpg");
   background-size: cover;
-  background-color: #404040; /*during loading time if image not display then color */
+  background-color: lightgray; /*during loading time if image not display then color */
+  background-blend-mode: multiply;
   background-position: center;
   padding: 0 0.25em 1em;
 }
@@ -78,11 +84,59 @@ strong {
 }
 .container-intro {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   min-height: 50vh;
 }
 
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  font-family: inherit;
+  text-align: inherit; /*it center the placeholder or we write center*/
+  border: 1px solid #404040;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+.btn-primary {
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  color: #fff;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: black;
+  transform: scale(1.1);
+}
+
+input:hover,
+input:focus {
+  transform: scale(1.1);
+}
 /* media */
 
 @media (min-width: 530px) {

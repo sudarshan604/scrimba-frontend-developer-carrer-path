@@ -9,9 +9,9 @@ img{
 }
 
 footer{
-   background-color: #143774;
+   background-color: #345480;
    text-align: center;
-  color:white;
+  color:rgba(255,255,255,0.5);
   padding:3em 0;
 }
 
@@ -32,7 +32,9 @@ p{
 }
 ul  a{
    text-decoration: none;
-  color:#707070
+  color:#707070;
+  text-transform:capitalize;
+  letter-spacing:2px;
 }
 
 ul li{
@@ -217,7 +219,7 @@ padding:10px;
 .widget-recent-post-title,
 .widget-title{
    font-size:1rem;
-   
+    letter-spacing: 1px;
 }
 .widget-recent-post
 {

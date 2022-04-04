@@ -15,7 +15,7 @@
         <p class="top-text">Mouthwateringly delicious</p>
       </div>
     </div>
-    <div class="main-content">
+    <div id="updateB" class="main-content">
       <div class="container">
         <h2>Become a BBQ master!</h2>
         <p>Register Today</p>
@@ -25,11 +25,29 @@
           is to learn from the best. You can do just that by signing up for this
           free webinar!
         </p>
+        <form
+          id="Email-Collector"
+          class="email-collector"
+          action="#"
+          method="post"
+        >
+          <input
+            name="firstName"
+            type="text"
+            required
+            placeholder="enter name"
+          />
+          <br />
+          <input name="email" type="email" required placeholder="enter email" />
 
+          <br /><button class="btn btn-primary" type="submit">Register</button>
+        </form>
         <p class="fine-print">
           We'll never share your information without your permission
         </p>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
