@@ -39,7 +39,6 @@ const lunchMenu = function () {
 };
 
 // arrow function
-
 let dinnerMenu = () => {
   return "hello ";
 };
@@ -47,11 +46,9 @@ let dinnerMenu = () => {
 let dinnerMenu1 = (food) => ` i am going  to eat ${food}`;
 
 // but for double argumrnt we need  parenthisis
-
 let dinnerMenu2 = (food, drink) => ` i am going  to eat ${food} and ${drink}`;
 
 // default parameter challenge
-
 const grocceryShop = (drink = "something") => {
   return `i am going to buy${drink} from the grocerry shop`;
 };
