@@ -1,0 +1,31 @@
+body {
+  background: linear-gradient(to top, #2c3e50, #bdc3c7);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.fun {
+  background: #c02425; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f0cb35,
+    #c02425
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f0cb35,
+    #c02425
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
