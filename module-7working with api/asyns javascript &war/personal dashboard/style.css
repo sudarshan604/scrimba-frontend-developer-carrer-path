@@ -1,3 +1,9 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 body {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -7,15 +13,16 @@ body {
   color: white;
   font-family: arial;
   text-shadow: 0px 0px 20px #aaaaaa;
-  box-sizing: border-box;
 }
 
 main {
+  box-sizing: border-box;
   padding: 15px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0px;
 }
 p,
 div {
@@ -42,4 +49,8 @@ span {
 }
 p {
   margin: 0px;
+}
+#weather-top {
+  display: flex;
+  font-size: 25px;
 }

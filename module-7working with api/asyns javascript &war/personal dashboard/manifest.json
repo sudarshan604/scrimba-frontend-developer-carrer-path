@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+
+  "name": "personal Dashboard",
+  "description": "just practice of async",
+  "version": "1.0.0",
+
+  // "browser_action": {
+  //   "default_icon": "icon.png"
+  // },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
