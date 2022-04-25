@@ -1,17 +1,13 @@
 import React from "react";
 
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Joke from "./components/Joke.js";
 
+import JokeData from "./components/JokesData.js";
 function App() {
-  return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
-}
+  const JokeComponent = JokeData.map((jokedata) => (
+    <Joke question={jokedata.question} punchline={jokedata.punchline} />
+  ));
 
+  return <div>{JokeComponent}</div>;
+}
 export default App;
